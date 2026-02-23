@@ -3,7 +3,7 @@ import React from 'react';
 import { Project } from '../types';
 
 const PROJECTS: Project[] = [
-  { id: 1, title: 'Backrooms Origins', description: 'Videojuego de Adventure/Horror ambientado y fiel al lore de "Los Backrooms"', image: 'https://picsum.photos/seed/p1/800/600', category: 'Environment' },
+  { id: 1, title: 'Backrooms Origins', description: 'Videojuego de Adventure/Horror ambientado y fiel al lore de "Los Backrooms"', image: '/portadabackrooms.png', category: 'Environment' },
   { id: 2, title: 'Mecha Drone V.2', description: 'Modelo Hard Surface texturizado íntegramente en Substance Painter.', image: 'https://picsum.photos/seed/p2/800/600', category: '3D Asset' },
   { id: 3, title: 'Abstract Geometry', description: 'Serie de renders abstractos explorando cáusticas y materiales complejos.', image: 'https://picsum.photos/seed/p3/800/600', category: 'Design' },
   { id: 4, title: 'Ancient Temple', description: 'Reconstrucción histórica para un proyecto de realidad aumentada.', image: 'https://picsum.photos/seed/p4/800/600', category: 'VR/AR' },
