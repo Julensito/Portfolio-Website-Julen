@@ -3,12 +3,12 @@ import React from 'react';
 import { Project } from '../types';
 
 const PROJECTS: Project[] = [
-  { id: 1, title: 'Backrooms Origins', description: 'Videojuego de Adventure/Horror ambientado y fiel al lore de "Los Backrooms"', image: '/portadabackrooms.png', category: 'Environment' },
-  { id: 2, title: 'Mecha Drone V.2', description: 'Modelo Hard Surface texturizado íntegramente en Substance Painter.', image: 'https://picsum.photos/seed/p2/800/600', category: '3D Asset' },
-  { id: 3, title: 'Abstract Geometry', description: 'Serie de renders abstractos explorando cáusticas y materiales complejos.', image: 'https://picsum.photos/seed/p3/800/600', category: 'Design' },
-  { id: 4, title: 'Ancient Temple', description: 'Reconstrucción histórica para un proyecto de realidad aumentada.', image: 'https://picsum.photos/seed/p4/800/600', category: 'VR/AR' },
-  { id: 5, title: 'Sci-Fi UI Kit', description: 'Paquete de interfaz futurista diseñada para Unity 3D.', image: 'https://picsum.photos/seed/p5/800/600', category: 'UI/UX' },
-  { id: 6, title: 'Character Rigging', description: 'Sistema de rigging avanzado para personajes bípedos en Blender.', image: 'https://picsum.photos/seed/p6/800/600', category: 'Animation' },
+  { id: 1, title: 'Backrooms Origins', description: 'Videojuego de Adventure/Horror ambientado y fiel al lore de "Los Backrooms"', image: '/portadabackrooms.png', category: 'Videogame' },
+  { id: 2, title: 'Spectral Roulette', description: 'Videojuego de Arcade/Roguelike sobre la ruleta tradicional de casino, ya que has sido castigado por el diablo en el más allá y debes usar los poderes de las máscaras para escapar del control del diablo.', image: 'https://picsum.photos/seed/p2/800/600', category: 'Videogame' },
+  { id: 3, title: 'Star Hunt', description: 'Videojuego de Survival/Roguelike sobre un superviviente espacial que tiene que alimentar a la bestia que convive con él, sino perecerá.', image: 'https://picsum.photos/seed/p3/800/600', category: 'Design' },
+  { id: 4, title: 'BACKROOMS', description: 'Serie de animación japonesa basada en una historia original sobre el origen de los backrooms.', image: 'https://picsum.photos/seed/p4/800/600', category: 'VR/AR' },
+  { id: 5, title: 'Pokémon Mystery Dungeon Battle Royale', description: 'Videojuego de Acción/RPG conviertete en tu pokémon y enfrentate y lucha por sobrevivir y ser el mejor.', image: 'https://picsum.photos/seed/p5/800/600', category: 'UI/UX' },
+  { id: 6, title: 'Próximamente', description: '', image: 'https://picsum.photos/seed/p6/800/600', category: 'Animation' },
 ];
 
 const ProjectsPage: React.FC = () => {
