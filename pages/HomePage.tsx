@@ -68,7 +68,7 @@ const HomePage: React.FC = () => {
             JULEN<br/>VALLECILLOS
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-16 font-medium tracking-tight opacity-80">
-            Artista 3D • Desarrollador Unity • Formador en Videojuegos
+            Artista 3D • Diseñador de Niveles • Desarrollador Unity • Diseñador Web • E-Commerce • Formador en Videojuegos • Productor Musical • SEO 
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link to="/proyectos" className="px-14 py-6 bg-primary text-white rounded-[2rem] font-black shadow-[0_20px_40px_rgba(59,130,246,0.3)] hover:scale-105 hover:-translate-y-1 transition-all w-full sm:w-auto text-center text-xl uppercase tracking-widest">
