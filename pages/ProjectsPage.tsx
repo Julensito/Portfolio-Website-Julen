@@ -4,10 +4,10 @@ import { Project } from '../types';
 
 const PROJECTS: Project[] = [
   { id: 1, title: 'Backrooms Origins', description: 'Videojuego de Adventure/Horror ambientado y fiel al lore de "Los Backrooms"', image: '/portadabackrooms.png', category: 'Videogame' },
-  { id: 2, title: 'Spectral Roulette', description: 'Videojuego de Arcade/Roguelike sobre la ruleta tradicional de casino, ya que has sido castigado por el diablo en el más allá y debes usar los poderes de las máscaras para escapar del control del diablo.', image: 'https://picsum.photos/seed/p2/800/600', category: 'Videogame' },
+  { id: 2, title: 'Spectral Roulette', description: 'Videojuego de Arcade/Roguelike sobre la ruleta tradicional de casino, ya que has sido castigado por el diablo en el más allá y debes usar los poderes de las máscaras para escapar del control del diablo.', image: '', category: 'Videogame' },
   { id: 3, title: 'Star Hunt', description: 'Videojuego de Survival/Roguelike sobre un superviviente espacial que tiene que alimentar a la bestia que convive con él, sino perecerá.', image: '/logostarhunt.png', category: 'Videogame' },
-  { id: 4, title: 'BACKROOMS', description: 'Serie de animación japonesa basada en una historia original sobre el origen de los backrooms.', image: '/portadaanimebackrooms', category: 'Anime Series' },
-  { id: 5, title: 'Pokémon Mystery Dungeon Battle Royale', description: 'Videojuego de Acción/RPG conviertete en tu pokémon y enfrentate y lucha por sobrevivir y ser el mejor.', image: 'https://picsum.photos/seed/p5/800/600', category: 'Videogame' },
+  { id: 4, title: 'BACKROOMS', description: 'Serie de animación japonesa basada en una historia original sobre el origen de los backrooms.', image: '/portadaanimebackrooms.jpg', category: 'Anime Series' },
+  { id: 5, title: 'Pokémon Mystery Dungeon Battle Royale', description: 'Videojuego de Acción/RPG conviertete en tu pokémon y enfrentate y lucha por sobrevivir y ser el mejor.', image: '', category: 'Videogame' },
   { id: 6, title: 'Próximamente', description: '', image: '/portadadragon.png', category: 'Videogame' },
 ];
 

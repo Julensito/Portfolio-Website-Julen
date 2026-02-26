@@ -104,9 +104,9 @@ const HomePage: React.FC = () => {
                  <h2 className="text-4xl font-black mb-6 flex items-center gap-4">
                     <Layout className="text-primary" /> Proyecto Actual
                  </h2>
-                 <h3 className="text-2xl font-bold text-white mb-4 italic">"Project NEON-RUN"</h3>
+                 <h3 className="text-2xl font-bold text-white mb-4 italic">"Backrooms Origins"</h3>
                  <p className="text-lg text-slate-400 mb-8 leading-relaxed">
-                    Un juego de plataformas rítmico ambientado en un mundo procedural de luces de neón. Utilizando <span className="text-blue-400 font-bold">Unity 2022 LTS</span> y sistemas de VFX avanzados para una experiencia visual única.
+                    Videojuego de Adventure/Horror ambientado y fiel al lore de "Los Backrooms". Utilizando <span className="text-blue-400 font-bold">Unity 2022 LTS</span> y sistemas de VFX avanzados para una experiencia visual única.
                  </p>
                  <div className="flex gap-6 items-center">
                     <div className="flex-grow bg-slate-800 h-3 rounded-full overflow-hidden border border-white/5">
@@ -147,7 +147,7 @@ const HomePage: React.FC = () => {
           <div className="order-1 md:order-2">
              <div className="relative p-2 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-[3.5rem] shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80" 
+                  src="/portadaandaluzia.png" 
                   alt="AndaluzIA Studio" 
                   className="rounded-[3rem] w-full object-cover aspect-video relative z-10"
                 />
