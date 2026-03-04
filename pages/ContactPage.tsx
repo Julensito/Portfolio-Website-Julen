@@ -2,23 +2,25 @@
 import React, { useState } from 'react';
 import { Send, Github, Linkedin, Mail } from 'lucide-react';
 import { Collaborator } from '../types';
-
-const COLLABORATORS: Collaborator[] = [
-  { id: 1, name: 'Sara Design', role: 'UI/UX Expert', image: 'https://picsum.photos/seed/c1/200/200', link: '#' },
-  { id: 2, name: 'Marco Dev', role: 'Backend Master', image: 'https://picsum.photos/seed/c2/200/200', link: '#' },
-  { id: 3, name: 'Ana Sound', role: 'Audio Designer', image: 'https://picsum.photos/seed/c3/200/200', link: '#' },
-  { id: 4, name: 'Lucas 3D', role: 'Rigger', image: 'https://picsum.photos/seed/c4/200/200', link: '#' },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 const ContactPage: React.FC = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const COLLABORATORS: Collaborator[] = [
+    { id: 1, name: 'Sara Design', role: 'UI/UX Expert', image: 'https://picsum.photos/seed/c1/200/200', link: '#' },
+    { id: 2, name: 'Marco Dev', role: 'Backend Master', image: 'https://picsum.photos/seed/c2/200/200', link: '#' },
+    { id: 3, name: 'Ana Sound', role: 'Audio Designer', image: 'https://picsum.photos/seed/c3/200/200', link: '#' },
+    { id: 4, name: 'Lucas 3D', role: 'Rigger', image: 'https://picsum.photos/seed/c4/200/200', link: '#' },
+  ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setTimeout(() => {
-      alert("¡Mensaje enviado con éxito! (Simulado)");
+      alert(t('contact.success'));
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
     }, 1500);
@@ -30,44 +32,44 @@ const ContactPage: React.FC = () => {
       <section className="py-20 bg-white dark:bg-slate-950">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-black mb-4">Hablemos</h1>
-            <p className="text-slate-500">¿Tienes un proyecto en mente o solo quieres saludar?</p>
+            <h1 className="text-5xl font-black mb-4">{t('contact.title')}</h1>
+            <p className="text-slate-500">{t('contact.subtitle')}</p>
           </div>
 
           <div className="bg-slate-50 dark:bg-slate-900 p-8 md:p-12 rounded-[2.5rem] shadow-xl border border-slate-200 dark:border-slate-800">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-bold mb-2 ml-1">Nombre</label>
+                  <label className="block text-sm font-bold mb-2 ml-1">{t('contact.label_name')}</label>
                   <input 
                     required
                     type="text" 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    placeholder="Tu nombre completo"
+                    placeholder={t('contact.placeholder_name')}
                     className="w-full bg-white dark:bg-slate-800 rounded-2xl px-6 py-4 outline-none border border-transparent focus:border-primary transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold mb-2 ml-1">Email</label>
+                  <label className="block text-sm font-bold mb-2 ml-1">{t('contact.label_email')}</label>
                   <input 
                     required
                     type="email" 
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    placeholder="correo@ejemplo.com"
+                    placeholder={t('contact.placeholder_email')}
                     className="w-full bg-white dark:bg-slate-800 rounded-2xl px-6 py-4 outline-none border border-transparent focus:border-primary transition-all"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-bold mb-2 ml-1">Mensaje</label>
+                <label className="block text-sm font-bold mb-2 ml-1">{t('contact.label_message')}</label>
                 <textarea 
                   required
                   rows={6}
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
-                  placeholder="Cuéntame sobre tu proyecto..."
+                  placeholder={t('contact.placeholder_message')}
                   className="w-full bg-white dark:bg-slate-800 rounded-2xl px-6 py-4 outline-none border border-transparent focus:border-primary transition-all resize-none"
                 ></textarea>
               </div>
@@ -76,7 +78,7 @@ const ContactPage: React.FC = () => {
                 disabled={isSubmitting}
                 className="w-full bg-primary text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-blue-600 transition-all disabled:opacity-50"
               >
-                {isSubmitting ? "Enviando..." : <><Send size={20} /> Enviar Mensaje</>}
+                {isSubmitting ? t('contact.sending') : <><Send size={20} /> {t('contact.send')}</>}
               </button>
             </form>
           </div>
@@ -86,7 +88,7 @@ const ContactPage: React.FC = () => {
       {/* Collaborators Section */}
       <section className="py-24 bg-slate-100 dark:bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-black mb-12 uppercase tracking-widest">Colaboradores & Amigos</h2>
+          <h2 className="text-3xl font-black mb-12 uppercase tracking-widest">{t('contact.collabs')}</h2>
           <div className="flex flex-wrap justify-center gap-12">
             {COLLABORATORS.map((collab) => (
               <a 
@@ -106,8 +108,8 @@ const ContactPage: React.FC = () => {
               <div className="w-32 h-32 rounded-full border-4 border-dashed border-slate-400 flex items-center justify-center mb-4 group-hover:border-primary transition-all">
                 <span className="text-4xl">+</span>
               </div>
-              <h4 className="font-bold text-lg">Tu nombre</h4>
-              <p className="text-xs text-slate-500 uppercase tracking-tighter">Colabora</p>
+              <h4 className="font-bold text-lg">{t('contact.your_name')}</h4>
+              <p className="text-xs text-slate-500 uppercase tracking-tighter">{t('contact.collab_cta')}</p>
             </div>
           </div>
         </div>
