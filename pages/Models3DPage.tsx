@@ -23,7 +23,7 @@ const MODELS: Model3D[] = [
       id: 3, 
       title: t('models.m3_title'), 
       description: t('models.m3_desc'), 
-      embedUrl: 'https://sketchfab.com/3d-models/nierps2-b72724af663f49d2b6818a504b037ca1' 
+      embedUrl: 'https://www.artstation.com/artwork/x3vmym' 
     }
   ];
 
