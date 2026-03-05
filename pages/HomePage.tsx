@@ -21,12 +21,12 @@ const HomePage: React.FC = () => {
     { 
       name: 'Substance Painter', 
       description: t('skills.substance_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Adobe_Substance_3D_Painter_Icon.svg' 
+      iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rEVtG7jlArrANOJUt--6qeS5BEWsyf7g4Q&s' 
     },
     { 
       name: 'Unreal Engine', 
       description: t('skills.unreal_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Unreal_Engine_logo.svg' 
+      iconUrl: 'https://logos-world.net/wp-content/uploads/2021/06/Unreal-Engine-Emblem.png' 
     },
     { 
       name: 'Unity', 
@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
     { 
       name: 'Reaper', 
       description: t('skills.reaper_desc'), 
-      iconUrl: 'https://www.reaper.fm/images/reaper_logo.png' 
+      iconUrl: 'https://upload.wikimedia.org/wikipedia/it/c/cf/REAPER_logo.png' 
     },
   ];
 
@@ -77,8 +77,8 @@ const HomePage: React.FC = () => {
 
   const LANGUAGES = [
     { name: t('lang.spanish'), level: t('lang.native') },
-    { name: t('lang.english'), level: t('lang.pro') },
-    { name: t('lang.basque'), level: t('lang.native') },
+    { name: t('lang.english'), level: t('lang.advanced') },
+    { name: t('lang.catalan'), level: t('lang.native') },
   ];
 
   return (
