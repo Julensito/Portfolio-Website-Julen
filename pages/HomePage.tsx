@@ -77,8 +77,8 @@ const HomePage: React.FC = () => {
 
   const LANGUAGES = [
     { name: t('lang.spanish'), level: t('lang.native') },
-    { name: t('lang.english'), level: t('lang.advanced') },
-    { name: t('lang.catalan'), level: t('lang.native') },
+    { name: t('lang.english'), level: t('lang.pro') },
+    { name: t('lang.basque'), level: t('lang.native') },
   ];
 
   return (
@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
             playsInline
             className="w-full h-full object-cover brightness-[0.25]"
           >
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-flying-over-a-futuristic-digital-city-at-night-42445-large.mp4" type="video/mp4" />
+            <source src="spacio.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950"></div>
         </div>
@@ -133,7 +133,7 @@ const HomePage: React.FC = () => {
                     <span className="w-2 h-2 bg-white rounded-full animate-ping"></span> En Desarrollo
                  </div>
                  <img 
-                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" 
+                    src="back1.png" 
                     alt="Proyecto Actual" 
                     className="rounded-[2.5rem] w-full aspect-video object-cover brightness-75 border border-white/10 shadow-inner"
                  />

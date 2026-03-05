@@ -17,13 +17,13 @@ const MODELS: Model3D[] = [
       id: 2, 
       title: t('models.m2_title'), 
       description: t('models.m2_desc'), 
-      embedUrl: 'https://sketchfab.com/models/44fdc12f00cc42838a9d1891152a5c4d/embed' 
+      embedUrl: 'https://sketchfab.com/3d-models/kodama-4480a62dc07043f394ba22d4819f5fdc' 
     },
     { 
       id: 3, 
       title: t('models.m3_title'), 
       description: t('models.m3_desc'), 
-      embedUrl: 'https://sketchfab.com/models/78881903e1e2474f8845f060d4b998a4/embed' 
+      embedUrl: 'https://sketchfab.com/3d-models/nierps2-b72724af663f49d2b6818a504b037ca1' 
     }
   ];
 
