@@ -9,12 +9,12 @@ const ProjectsPage: React.FC = () => {
   const { t } = useLanguage();
 
   const PROJECTS: Project[] = [
-    { id: 1, title: t('projects.p1_title'), description: t('projects.p1_desc'), image: 'https://picsum.photos/seed/p1/800/600', category: 'Environment' },
-    { id: 2, title: t('projects.p2_title'), description: t('projects.p2_desc'), image: 'https://picsum.photos/seed/p2/800/600', category: '3D Asset' },
-    { id: 3, title: t('projects.p3_title'), description: t('projects.p3_desc'), image: 'https://picsum.photos/seed/p3/800/600', category: 'Design' },
-    { id: 4, title: t('projects.p4_title'), description: t('projects.p4_desc'), image: 'https://picsum.photos/seed/p4/800/600', category: 'VR/AR' },
-    { id: 5, title: t('projects.p5_title'), description: t('projects.p5_desc'), image: 'https://picsum.photos/seed/p5/800/600', category: 'UI/UX' },
-    { id: 6, title: t('projects.p6_title'), description: t('projects.p6_desc'), image: 'https://picsum.photos/seed/p6/800/600', category: 'Animation' },
+    { id: 1, title: t('projects.p1_title'), description: t('projects.p1_desc'), image: 'portadabackrooms.png', category: 'Videogame' },
+    { id: 2, title: t('projects.p2_title'), description: t('projects.p2_desc'), image: '', category: 'Videogame' },
+    { id: 3, title: t('projects.p3_title'), description: t('projects.p3_desc'), image: 'logostarhunt.png', category: 'Videogame' },
+    { id: 4, title: t('projects.p4_title'), description: t('projects.p4_desc'), image: 'portadaanimebackrooms.png', category: 'Anime Series' },
+    { id: 5, title: t('projects.p5_title'), description: t('projects.p5_desc'), image: '', category: 'Fangame' },
+    { id: 6, title: t('projects.p6_title'), description: t('projects.p6_desc'), image: 'portadadrgaon.png', category: 'Videogame' },
   ];
 
   return (
