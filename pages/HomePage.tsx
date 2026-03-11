@@ -184,7 +184,7 @@ const HomePage: React.FC = () => {
           <div className="order-1 md:order-2">
              <div className="relative p-2 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-[3.5rem] shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80" 
+                  src="portadaandaluzia.jpg" 
                   alt="AndaluzIA Studio" 
                   className="rounded-[3rem] w-full object-cover aspect-video relative z-10"
                 />
