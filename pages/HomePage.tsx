@@ -184,7 +184,7 @@ const HomePage: React.FC = () => {
           <div className="order-1 md:order-2">
              <div className="relative p-2 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-[3.5rem] shadow-2xl">
                 <img 
-                  src="portadaandaluzia.jpg" 
+                  src="https://andaluzia.es/wp-content/uploads/2025/10/andaluzia-.webp" 
                   alt="AndaluzIA Studio" 
                   className="rounded-[3rem] w-full object-cover aspect-video relative z-10"
                 />
