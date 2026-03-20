@@ -1,10 +1,10 @@
 
-
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { Sun, Moon, FileText, Menu, X, Music, Volume2, VolumeX, Languages } from 'lucide-react';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 import Models3DPage from './pages/Models3DPage';
 import ContactPage from './pages/ContactPage';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
@@ -107,7 +107,7 @@ const AppContent: React.FC = () => {
                 scrolling="no" 
                 frameBorder="no" 
                 allow="autoplay" 
-                src="https://soundcloud.com/yulen-vallecillos"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1141380322&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
               ></iframe>
           </div>
         )}
@@ -131,6 +131,7 @@ const AppContent: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/proyectos" element={<ProjectsPage />} />
+          <Route path="/proyectos/:id" element={<ProjectDetailPage />} />
           <Route path="/modelos-3d" element={<Models3DPage />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>

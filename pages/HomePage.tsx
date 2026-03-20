@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ExternalLink, GraduationCap, Briefcase, Download, CheckCircle, Youtube, Instagram, Video, Sparkles, Layout, Gamepad2 } from 'lucide-react';
@@ -501,13 +502,17 @@ const HomePage: React.FC = () => {
             <Link to="/proyectos" className="px-12 py-5 bg-slate-900 text-white dark:bg-white dark:text-black rounded-3xl font-black text-xl hover:scale-110 transition-all uppercase tracking-widest">{t('projects.explore_all')}</Link>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
-            {[1, 2, 3].map((id) => (
-              <div key={id} className="group relative overflow-hidden rounded-[4rem] aspect-[3/4] shadow-2xl border border-slate-200 dark:border-white/5">
-                <img src={`https://picsum.photos/seed/${id + 88}/900/1200`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" alt="Proyecto" />
+            {[
+              { id: 1, title: t('projects.p1_title'), img: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=900&q=1200' },
+              { id: 2, title: t('projects.p2_title'), img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=1200' },
+              { id: 3, title: t('projects.p3_title'), img: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=1200' }
+            ].map((proj) => (
+              <div key={proj.id} className="group relative overflow-hidden rounded-[4rem] aspect-[3/4] shadow-2xl border border-slate-200 dark:border-white/5">
+                <img src={proj.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" alt={proj.title} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-12 opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-20 group-hover:translate-y-0">
-                  <h4 className="text-4xl font-black mb-4 tracking-tighter uppercase italic text-white">{t('projects.environment')} {id}</h4>
-                  <p className="text-xl text-slate-300 mb-10 font-bold uppercase tracking-[0.2em] text-xs">Unreal Engine • Lumen</p>
-                  <Link to="/proyectos" className="bg-primary text-white py-5 px-10 rounded-2xl font-black text-center text-sm tracking-widest uppercase hover:bg-blue-500 transition-colors shadow-xl">{t('projects.view_details')}</Link>
+                  <h4 className="text-4xl font-black mb-4 tracking-tighter uppercase italic text-white">{proj.title}</h4>
+                  <p className="text-xl text-slate-300 mb-10 font-bold uppercase tracking-[0.2em] text-xs">Unity • C# • 3D Art</p>
+                  <Link to={`/proyectos/${proj.id}`} className="bg-primary text-white py-5 px-10 rounded-2xl font-black text-center text-sm tracking-widest uppercase hover:bg-blue-500 transition-colors shadow-xl">{t('projects.view_details')}</Link>
                 </div>
               </div>
             ))}

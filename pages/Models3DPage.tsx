@@ -2,28 +2,29 @@
 import React from 'react';
 import { Model3D } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import ModelViewer from '../components/ModelViewer';
 
 const Models3DPage: React.FC = () => {
   const { t } = useLanguage();
 
-const MODELS: Model3D[] = [
+  const MODELS: Model3D[] = [
     { 
       id: 1, 
       title: t('models.m1_title'), 
       description: t('models.m1_desc'), 
-      embedUrl: 'https://sketchfab.com/models/0f10e4f8d4e542878d6560936f368c26/embed' 
+      modelUrl: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb' 
     },
     { 
       id: 2, 
       title: t('models.m2_title'), 
       description: t('models.m2_desc'), 
-      embedUrl: 'https://sketchfab.com/3d-models/kodama-4480a62dc07043f394ba22d4819f5fdc' 
+      modelUrl: 'https://modelviewer.dev/shared-assets/models/DamagedHelmet.glb' 
     },
     { 
       id: 3, 
       title: t('models.m3_title'), 
       description: t('models.m3_desc'), 
-      embedUrl: 'https://www.artstation.com/artwork/x3vmym' 
+      modelUrl: 'https://modelviewer.dev/shared-assets/models/RobotExpressive.glb' 
     }
   ];
 
@@ -37,15 +38,8 @@ const MODELS: Model3D[] = [
       <div className="space-y-24">
         {MODELS.map((model, idx) => (
           <div key={model.id} className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
-            <div className="w-full lg:w-2/3 aspect-video bg-slate-200 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-2xl relative">
-               <iframe 
-                title={model.title}
-                className="w-full h-full"
-                frameBorder="0" 
-                allowFullScreen 
-                allow="autoplay; fullscreen; xr-spatial-tracking" 
-                src={model.embedUrl}
-              ></iframe>
+            <div className="w-full lg:w-2/3 aspect-video shadow-2xl relative">
+               <ModelViewer modelUrl={model.modelUrl} title={model.title} />
             </div>
             <div className="w-full lg:w-1/3">
               <span className="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">{t('models_page.model_label')} {model.id}</span>

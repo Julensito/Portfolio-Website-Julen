@@ -11,7 +11,7 @@ export interface Model3D {
   id: number;
   title: string;
   description: string;
-  embedUrl: string;
+  modelUrl: string;
 }
 
 export interface Collaborator {
