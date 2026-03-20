@@ -8,12 +8,12 @@ const ProjectsPage: React.FC = () => {
   const { t } = useLanguage();
 
   const PROJECTS: Project[] = [
-    { id: 1, title: t('projects.p1_title'), description: t('projects.p1_desc'), image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=800&q=80', category: 'Videojuego' },
-    { id: 2, title: t('projects.p2_title'), description: t('projects.p2_desc'), image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80', category: 'Videojuego' },
-    { id: 3, title: t('projects.p3_title'), description: t('projects.p3_desc'), image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=800&q=80', category: 'Videojuego' },
-    { id: 4, title: t('projects.p4_title'), description: t('projects.p4_desc'), image: 'https://images.unsplash.com/photo-1578632738981-4330c7091f35?auto=format&fit=crop&w=800&q=80', category: 'Serie Anime' },
+    { id: 1, title: t('projects.p1_title'), description: t('projects.p1_desc'), image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=800&q=80', category: 'Videogame' },
+    { id: 2, title: t('projects.p2_title'), description: t('projects.p2_desc'), image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80', category: 'Videogame' },
+    { id: 3, title: t('projects.p3_title'), description: t('projects.p3_desc'), image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=800&q=80', category: 'Videogame' },
+    { id: 4, title: t('projects.p4_title'), description: t('projects.p4_desc'), image: '/portadaanimebackrooms.png', category: 'Anime Series' },
     { id: 5, title: t('projects.p5_title'), description: t('projects.p5_desc'), image: 'https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&w=800&q=80', category: 'Videogame' },
-    { id: 6, title: t('projects.p6_title'), description: t('projects.p6_desc'), image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80', category: 'Próximamente' },
+    { id: 6, title: t('projects.p6_title'), description: t('projects.p6_desc'), image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80', category: 'Coming soon...' },
   ];
 
   return (

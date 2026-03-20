@@ -15,8 +15,8 @@ const ProjectDetailPage: React.FC = () => {
       description: t('projects.p1_desc'), 
       image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80', 
       category: 'Videojuego',
-      date: '2023 - Present',
-      tech: ['Unity', 'C#', 'URP', 'Blender'],
+      date: '2025 - Present',
+      tech: ['Unreal Engine 5', 'Blueprint/C++', '3ds Max', 'Blender'],
       longDesc: 'Backrooms Origins is a deep dive into the liminal space phenomenon. The project focuses on creating a sense of "uncomfortable familiarity" through procedural generation and advanced lighting techniques. Players must navigate infinite office spaces while managing their sanity and avoiding entities that defy logic.'
     },
     { 
@@ -25,8 +25,8 @@ const ProjectDetailPage: React.FC = () => {
       description: t('projects.p2_desc'), 
       image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80', 
       category: 'Videojuego',
-      date: '2023',
-      tech: ['Unity', 'C#', 'Substance Painter', 'FMOD'],
+      date: '2026 - Present',
+      tech: ['Unreal Engine 5', 'Blueprint/C++', 'Substance Painter', 'Blender'],
       longDesc: 'Spectral Roulette combines the tension of gambling with supernatural horror. Every bet has a physical consequence in the game world. The visual style is inspired by 1950s noir but with a neon, ghostly twist. The AI for the spectral opponents uses complex decision trees to mimic human bluffing.'
     },
     { 
@@ -35,7 +35,7 @@ const ProjectDetailPage: React.FC = () => {
       description: t('projects.p3_desc'), 
       image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=1200&q=80', 
       category: 'Videojuego',
-      date: '2022',
+      date: '2025 - Present',
       tech: ['Unity', 'Shader Graph', 'Blender'],
       longDesc: 'Star Hunt is a meditative journey through a dying universe. The core loop involves navigating a small scout ship through asteroid fields and nebulae to find stars on the brink of supernova. The game features a custom cel-shaded art style and a dynamic soundtrack that reacts to the proximity of celestial bodies.'
     },
@@ -43,9 +43,9 @@ const ProjectDetailPage: React.FC = () => {
       id: 4, 
       title: t('projects.p4_title'), 
       description: t('projects.p4_desc'), 
-      image: 'https://images.unsplash.com/photo-1578632738981-4330c7091f35?auto=format&fit=crop&w=1200&q=80', 
+      image: '/prota.png', 
       category: 'Serie Anime',
-      date: '2023 - Present',
+      date: '2024 - Present',
       tech: ['Blender', 'After Effects', 'Premiere Pro'],
       longDesc: 'This animated series project aims to bring a new visual language to the Backrooms mythos. By combining 3D environments with 2D character animation, the series explores the psychological toll of being trapped in an endless, non-Euclidean space. Each episode focuses on a different level and a different survivor\'s story.'
     },
@@ -55,7 +55,7 @@ const ProjectDetailPage: React.FC = () => {
       description: t('projects.p5_desc'), 
       image: 'https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&w=1200&q=80', 
       category: 'Videogame',
-      date: '2022',
+      date: 'Future',
       tech: ['Unity', 'Photon Fusion', 'C#'],
       longDesc: 'Pokémon Mystery Battle Royale is a reimagining of the classic mystery dungeon formula in a competitive multiplayer setting. 50 players enter a procedurally generated dungeon, collecting items and leveling up in real-time before the final showdown. Features a custom netcode for low-latency tactical combat.'
     },

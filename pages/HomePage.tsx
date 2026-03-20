@@ -22,12 +22,12 @@ const HomePage: React.FC = () => {
     { 
       name: 'Substance Painter', 
       description: t('skills.substance_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Adobe_Substance_3D_Painter_Icon.svg' 
+      iconUrl: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/adobe-substance-3d-painter-icon.png' 
     },
     { 
       name: 'Unreal Engine', 
       description: t('skills.unreal_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Unreal_Engine_logo.svg' 
+      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/960px-Unreal_Engine_Logo.svg.png?_=20230415034210' 
     },
     { 
       name: 'Unity', 
@@ -42,17 +42,17 @@ const HomePage: React.FC = () => {
     { 
       name: 'Reaper', 
       description: t('skills.reaper_desc'), 
-      iconUrl: 'https://www.reaper.fm/images/reaper_logo.png' 
+      iconUrl: 'https://www.svgrepo.com/show/510444/logo-reaper.svg' 
     },
     { 
       name: 'Cap Cut', 
       description: t('skills.capcut_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/af/CapCut_logo.svg' 
+      iconUrl: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/capcut-icon.png' 
     },
     { 
       name: 'Claude', 
       description: t('skills.claude_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Anthropic_Claude_logo.svg' 
+      iconUrl: 'https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/claude-color.png' 
     },
     { 
       name: 'Gemini', 
@@ -77,12 +77,12 @@ const HomePage: React.FC = () => {
     { 
       name: 'Freepik', 
       description: t('skills.freepik_desc'), 
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Freepik_logo.svg' 
+      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/FREEPIK_logo.svg/250px-FREEPIK_logo.svg.png?_=20240222102815' 
     },
     { 
       name: 'Photopea', 
       description: t('skills.photopea_desc'), 
-      iconUrl: 'https://www.photopea.com/promo/thumb.png' 
+      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Photopea_logo.svg/500px-Photopea_logo.svg.png?_=20181207175809' 
     },
     { 
       name: 'GitHub', 
@@ -145,7 +145,7 @@ const HomePage: React.FC = () => {
             playsInline
             className="w-full h-full object-cover brightness-[0.25] dark:brightness-[0.25]"
           >
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-flying-over-a-futuristic-digital-city-at-night-42445-large.mp4" type="video/mp4" />
+            <source src="nubelino.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950"></div>
         </div>
@@ -164,7 +164,9 @@ const HomePage: React.FC = () => {
             <Link to="/proyectos" className="px-14 py-6 bg-primary text-white rounded-[2rem] font-black shadow-[0_20px_40px_rgba(59,130,246,0.3)] hover:scale-105 hover:-translate-y-1 transition-all w-full sm:w-auto text-center text-xl uppercase tracking-widest">
               {t('hero.view_projects')}
             </Link>
-            <button className="px-14 py-6 border-2 border-white/10 text-white backdrop-blur-xl rounded-[2rem] font-black hover:bg-white/5 transition-all w-full sm:w-auto text-center text-xl uppercase tracking-widest flex items-center justify-center gap-3">
+            <button 
+              onClick={() => window.open('/CV de Julen Diseñador de Videojuegos Y Niveles - Diseñador Gráfico (Español).pdf', '_blank')}
+              className="px-14 py-6 border-2 border-white/10 text-white backdrop-blur-xl rounded-[2rem] font-black hover:bg-white/5 transition-all w-full sm:w-auto text-center text-xl uppercase tracking-widest flex items-center justify-center gap-3">
               {t('hero.download_cv')} <Download size={20} />
             </button>
           </div>
@@ -236,7 +238,7 @@ const HomePage: React.FC = () => {
           <div className="order-1 md:order-2">
              <div className="relative p-2 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-[3.5rem] shadow-2xl">
                 <img 
-                  src="/andaluzia-studio.png" 
+                  src="https://andaluzia.es/wp-content/uploads/al_opt_content/IMAGE/andaluzia.es/wp-content/uploads/2025/10/andaluzia-.webp.bv.webp?bv_host=andaluzia.es" 
                   alt="AndaluzIA Studio" 
                   className="rounded-[3rem] w-full object-cover aspect-video relative z-10"
                   referrerPolicy="no-referrer"
@@ -280,10 +282,10 @@ const HomePage: React.FC = () => {
                </div>
                <div className="p-6 bg-slate-100 dark:bg-slate-900/50 border-l-4 border-orange-600 rounded-r-2xl">
                   <p className="text-xs font-black uppercase tracking-widest text-orange-600 dark:text-orange-500 mb-2">Engine</p>
-                  <p className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-tighter">Unity / C#</p>
+                  <p className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-tighter">Unity / C# - Unreal Engine / C++</p>
                </div>
             </div>
-            <a href="#" className="group inline-flex items-center gap-6 bg-orange-600 text-white px-12 py-6 rounded-2xl font-black text-xl hover:bg-orange-500 transition-all shadow-[0_20px_40px_rgba(234,88,12,0.3)] uppercase tracking-widest">
+            <a href="https://www.darwingamescompany.com/" className="group inline-flex items-center gap-6 bg-orange-600 text-white px-12 py-6 rounded-2xl font-black text-xl hover:bg-orange-500 transition-all shadow-[0_20px_40px_rgba(234,88,12,0.3)] uppercase tracking-widest">
               {t('darwin.view_studio')} <ArrowRight className="group-hover:translate-x-3 transition-transform" />
             </a>
           </div>
@@ -296,7 +298,7 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-20 items-center">
           <div className="relative group">
              <img 
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" 
+              src="https://docenzia.com/docs/67920/ad620743e4d8e0450eb49da880eace07" 
               alt="Escuela de Arte de Granada" 
               className="rounded-[3.5rem] shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-1000 border-4 border-slate-200 dark:border-white/5"
             />
@@ -329,8 +331,8 @@ const HomePage: React.FC = () => {
             </div>
             
             <button 
-              className="group inline-flex items-center gap-6 bg-white text-red-600 px-12 py-6 rounded-3xl font-black text-xl hover:scale-105 transition-all shadow-2xl uppercase tracking-widest border-4 border-white active:scale-95"
-            >
+              onClick={() => window.open('/Curso de Introducción a Unity para videojuegos 2D y 3D.pdf', '_blank')}
+              className="group inline-flex items-center gap-6 bg-white text-red-600 px-12 py-6 rounded-3xl font-black text-xl hover:scale-105 transition-all shadow-2xl uppercase tracking-widest border-4 border-white active:scale-95">
               <Download size={28} className="group-hover:translate-y-1 transition-transform" /> {t('eag.download_plan')}
             </button>
           </div>
@@ -347,7 +349,7 @@ const HomePage: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* YouTube */}
-            <a href="https://youtube.com/@Julengine" target="_blank" rel="noopener noreferrer" className="group p-12 bg-slate-50 dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-white/5 hover:border-red-600/40 transition-all flex flex-col items-center text-center hover:-translate-y-4 shadow-sm">
+            <a href="https://www.youtube.com/@Julengine" target="_blank" rel="noopener noreferrer" className="group p-12 bg-slate-50 dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-white/5 hover:border-red-600/40 transition-all flex flex-col items-center text-center hover:-translate-y-4 shadow-sm">
               <div className="w-24 h-24 bg-red-600/10 text-red-600 rounded-3xl flex items-center justify-center mb-10 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all shadow-inner">
                 <Youtube size={48} />
               </div>
@@ -357,7 +359,7 @@ const HomePage: React.FC = () => {
             </a>
 
             {/* TikTok */}
-            <a href="https://tiktok.com/@Julengine" target="_blank" rel="noopener noreferrer" className="group p-12 bg-slate-50 dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-white/5 hover:border-cyan-400/40 transition-all flex flex-col items-center text-center hover:-translate-y-4 shadow-sm">
+            <a href="https://www.tiktok.com/@jvallecillos_" target="_blank" rel="noopener noreferrer" className="group p-12 bg-slate-50 dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-white/5 hover:border-cyan-400/40 transition-all flex flex-col items-center text-center hover:-translate-y-4 shadow-sm">
               <div className="w-24 h-24 bg-cyan-400/10 text-cyan-400 rounded-3xl flex items-center justify-center mb-10 group-hover:scale-110 group-hover:bg-cyan-400 group-hover:text-black transition-all shadow-inner">
                 <Video size={48} />
               </div>

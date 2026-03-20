@@ -107,7 +107,7 @@ const AppContent: React.FC = () => {
                 scrolling="no" 
                 frameBorder="no" 
                 allow="autoplay" 
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1141380322&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                src="https://soundcloud.com/yulen-vallecillos/drama-piano-music?si=20436ccd828d45a69ffde228a4fdce6a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
               ></iframe>
           </div>
         )}
@@ -142,9 +142,8 @@ const AppContent: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h3 className="text-2xl font-black mb-8 tracking-tighter">JULEN VALLECILLOS</h3>
           <div className="flex justify-center space-x-8 mb-10">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary transition-all font-bold uppercase text-xs tracking-widest">LinkedIn</a>
-            <a href="https://artstation.com" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary transition-all font-bold uppercase text-xs tracking-widest">ArtStation</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary transition-all font-bold uppercase text-xs tracking-widest">GitHub</a>
+            <a href="https://www.linkedin.com/in/julen-fern%C3%A1ndez-vallecillos-a63968366/" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary transition-all font-bold uppercase text-xs tracking-widest">LinkedIn</a>
+            <a href="https://www.artstation.com/ju__len" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary transition-all font-bold uppercase text-xs tracking-widest">ArtStation</a>
             <a href="https://instagram.com/jvallecillos_" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary transition-all font-bold uppercase text-xs tracking-widest">Instagram</a>
           </div>
           <p className="text-slate-500 dark:text-slate-600 text-xs font-bold uppercase tracking-[0.2em]">

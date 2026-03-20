@@ -10,10 +10,7 @@ const ContactPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const COLLABORATORS: Collaborator[] = [
-    { id: 1, name: 'Sara Design', role: 'UI/UX Expert', image: 'https://picsum.photos/seed/c1/200/200', link: '#' },
-    { id: 2, name: 'Marco Dev', role: 'Backend Master', image: 'https://picsum.photos/seed/c2/200/200', link: '#' },
-    { id: 3, name: 'Ana Sound', role: 'Audio Designer', image: 'https://picsum.photos/seed/c3/200/200', link: '#' },
-    { id: 4, name: 'Lucas 3D', role: 'Rigger', image: 'https://picsum.photos/seed/c4/200/200', link: '#' },
+    { id: 1, name: 'Ángel Robles', role: 'Full Stack Developer', image: '/mangologo.jpg', link: 'https://angelrobles.netlify.app/' },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
