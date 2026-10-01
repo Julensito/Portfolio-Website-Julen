@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080e20">
+  <meta name="description" content="Julen Vallecillos. Arte 3D, desarrollo de videojuegos, diseño digital y docencia. Conoce mis especialidades y herramientas y conecta conmigo.">
+  <title>Julen Vallecillos · Portfolio creativo</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232255f4'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial' font-size='38' font-weight='bold' fill='white'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="stars.js" defer></script>
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Julen Vallecillos, inicio">JULEN<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#red">Mi red</a>
+    </nav>
+    <a class="nav-contact" href="#contacto">Hablemos</a>
+  </header>
+  <main id="contenido">
+    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">ARTE · TECNOLOGÍA · CREATIVIDAD</p>
+        <h1 id="hero-title">Julen<br>Vallecillos<span>.</span></h1>
+        <p class="intro">Del mundo 3D a las experiencias digitales.</p>
+        <p class="hero-description">Arte 3D, videojuegos y diseño digital. Combino creatividad y herramientas técnicas para dar forma a ideas y compartir lo que aprendo.</p>
+        <a class="button primary" href="#herramientas">Conoce mis herramientas</a>
+      </div>
+      <aside class="profile-panel" aria-label="Áreas de trabajo">
+        <div class="panel-heading"><span>PERFIL CREATIVO</span><span>JV / 01</span></div>
+        <p>Ideas que<br>toman <em>forma.</em></p>
+        <div class="discipline"><span>01</span><strong>Arte & entornos 3D</strong></div>
+        <div class="discipline"><span>02</span><strong>Experiencias interactivas</strong></div>
+        <div class="discipline"><span>03</span><strong>Diseño & contenido digital</strong></div>
+        <div class="panel-bottom">BLENDER / UNITY / DISEÑO</div>
+      </aside>
+    </section>
+    <section class="wrap section specialties" id="especialidades" aria-labelledby="specialties-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / ESPECIALIDADES</p><h2 id="specialties-title">Lo que puedo aportar.</h2></div><p>Creatividad visual.<br>Una base técnica para llevarla a la práctica.</p></div>
+      <div class="specialty-grid">
+        <article class="specialty"><span class="specialty-number">01 / 3D</span><h3>Arte 3D</h3><p>Modelado, texturizado, iluminación y creación de entornos y recursos visuales.</p><div class="tags"><span>Modelado</span><span>Texturas PBR</span><span>Iluminación</span></div></article>
+        <article class="specialty"><span class="specialty-number">02 / PLAY</span><h3>Videojuegos</h3><p>Diseño de niveles, prototipos y desarrollo de experiencias interactivas en Unity.</p><div class="tags"><span>Level design</span><span>Unity</span><span>C#</span></div></article>
+        <article class="specialty"><span class="specialty-number">03 / DIGITAL</span><h3>Diseño digital</h3><p>Diseño web, piezas gráficas y contenido audiovisual para comunicación y marketing.</p><div class="tags"><span>Web</span><span>Marketing</span><span>Vídeo</span></div></article>
+        <article class="specialty"><span class="specialty-number">04 / LEARN</span><h3>Docencia creativa</h3><p>Formación en creación de videojuegos, Unity y procesos de producción de arte 3D.</p><div class="tags"><span>Formación</span><span>Unity 2D / 3D</span></div></article>
+      </div>
+    </section>
+    <section class="tool-section" id="herramientas" aria-labelledby="tools-title">
+      <div class="wrap section">
+        <div class="section-heading"><div><p class="eyebrow">02 / HERRAMIENTAS</p><h2 id="tools-title">Mi caja de herramientas.</h2></div><p>Los programas con los que trabajo,<br>organizados por área y nivel de dominio.</p></div>
+        <div class="tool-toolbar">
+          <div class="filters" role="group" aria-label="Filtrar herramientas por área">
+            <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+            <button type="button" data-filter="3d" aria-pressed="false">3D y videojuegos</button>
+            <button type="button" data-filter="design" aria-pressed="false">Diseño y contenido</button>
+            <button type="button" data-filter="dev" aria-pressed="false">Desarrollo e IA</button>
+          </div>
+          <div class="legend" aria-label="Leyenda de niveles"><span><i class="low"></i>Bajo</span><span><i class="medium"></i>Medio</span><span><i class="high"></i>Alto</span></div>
+        </div>
+        <div id="tool-grid" class="tool-grid"></div>
+        <p id="tool-count" class="tool-count" role="status" aria-live="polite"></p>
+        <noscript><p>Activa JavaScript para ver el catálogo de herramientas y sus niveles.</p></noscript>
+      </div>
+    </section>
+    <section class="wrap section contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow">03 / CONTACTO</p><h2 id="contact-title">Una buena idea<br>empieza hablando<span>.</span></h2><p>¿Buscas un perfil creativo para tu equipo o quieres proponerme una colaboración? Me encantará conocer tu proyecto.</p></div>
+      <div class="contact-card"><div class="avatar" aria-hidden="true">JV</div><h3>Julen Vallecillos</h3><p>Arte 3D · Videojuegos · Diseño digital</p><div class="contact-divider"></div><a id="contact-primary" class="button primary" href="https://www.linkedin.com/in/julen-fern%C3%A1ndez-vallecillos-a63968366/" target="_blank" rel="noopener noreferrer">Contactar por LinkedIn</a><p id="contact-address" class="contact-address" hidden></p><div class="social-links"><a href="https://www.linkedin.com/in/julen-fern%C3%A1ndez-vallecillos-a63968366/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.artstation.com/ju__len" target="_blank" rel="noopener noreferrer">ArtStation</a><a href="https://www.instagram.com/jvallecillos_/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div>
+    </section>
+    <section class="wrap section network-section" id="red" aria-labelledby="network-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / MI RED</p><h2 id="network-title">Personas con talento.</h2></div><p>Conoce a los profesionales<br>de mi entorno creativo.</p></div>
+      <div id="network-grid" class="network-grid"></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#inicio">JULEN<span>.</span></a><p>© <span id="year">2026</span> Julen Vallecillos</p><a href="#inicio">Volver al inicio</a></footer>
+</body>
+</html>
+
+
