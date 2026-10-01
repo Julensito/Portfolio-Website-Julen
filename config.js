@@ -4,6 +4,11 @@
    email vacío mantiene el contacto por LinkedIn, que sí está conectado. */
 window.PORTFOLIO = {
   email: "yunyulen@gmail.com",
+  soundcloud: "https://soundcloud.com/yulen-vallecillos",
+  projects: [
+    { name: "Darwin & Co", category: "VIDEOJUEGOS", theme: "project-darwin", tagline: "DARWIN GAMES COMPANY", description: "Mi futura empresa de videojuegos. Un proyecto propio dedicado a crear experiencias interactivas y dar forma a nuevos mundos.", tags: ["Empresa propia", "Videojuegos", "Desarrollo"], url: "https://www.darwingamescompany.com/" },
+    { name: "InterAds", category: "MARKETING DIGITAL", theme: "project-interads", tagline: "CREATIVIDAD · ESTRATEGIA · PUBLICIDAD", description: "Mi agencia de marketing digital. Un espacio donde unir diseño, contenido y publicidad para desarrollar la comunicación de marcas y negocios.", tags: ["Agencia propia", "Marketing digital", "Diseño"], url: "" }
+  ],
   tools: [
     { name: "Blender", icon: "assets/icons/blender.svg", mark: "Bl", category: "3d", level: "high", color: "#a4490b", bg: "#fff0e2", description: "Modelado, entornos y renderizado" },
     { name: "Unity", icon: "assets/icons/unity.svg", mark: "Un", category: "3d", level: "high", color: "#252932", bg: "#e9ecf1", description: "Desarrollo de videojuegos 2D y 3D" },
@@ -34,4 +39,5 @@ window.PORTFOLIO = {
     { name: "Ángel Robles", role: "Full Stack Developer", mark: "AR", url: "https://angelrobles.netlify.app/", domain: "angelrobles.netlify.app" }
   ]
 };
+
 
